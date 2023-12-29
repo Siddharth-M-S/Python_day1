@@ -1,0 +1,27 @@
+
+convert img extensions
+
+import cv2
+
+img = cv2.imread("pra.jpg")
+cv2.imshow('show', img)
+
+cv2.imwrite('pra.png', img)  # Uncomment this line and use the appropriate file extension
+
+cv2.waitKey(50000)
+cv2.destroyAllWindows()
+
+
+  -------------------------------------------------------------------xxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------------------------------------------
+
+
+color to gray
+  
+import cv2
+image = cv2.imread ("sid.png")
+grayImage = cv2.cvtColor (image, cv2.COLOR_BGR2GRAY)
+cv2.imshow ('original', image)
+cv2.imshow ('Gray', grayImage)
+cv2.imwrite('graynew.jpg', grayImage)
+print (image.shape)
+print (image.size)
